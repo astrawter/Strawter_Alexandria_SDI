@@ -46,7 +46,6 @@ console.log(perimeter);
 var orangeBins = [234, 567, 883];
 var total = orangeBins[0] + orangeBins[1] + orangeBins[2];
 console.log(total);
-*/
 
 //concatenating puts together the two variables using "" around a number makes it a string and not a number
 var firstName = "Alexandria";
@@ -61,3 +60,17 @@ var b = "7";
 var result = a + b;
 
 console.log(result);
+*/
+
+//Casting making strings numbers and vice versa
+
+var stringVar= "6";
+var result = 7 + Number(stringVar); //Tells the computer to treat it as a number
+console.log(result);
+
+var areaCode = 832;
+var firstPart = 492;
+var secPart= 2381;
+
+var phoneNo = "(" + String(areaCode) + ")" +  String(firstPart) + "-" + String(secPart);
+console.log(phoneNo);
