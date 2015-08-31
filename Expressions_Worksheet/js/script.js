@@ -37,3 +37,12 @@ console.log("Each person ate " + slices + " slices of pizza at the party.");
 var leftovers = (slicesPizza * wholePizza) % people;
 //Print out how many slices Sparky will eat
 console.log("Sparky got " + leftovers + " slices of pizza.");
+
+//Average shopping bill: Store the past five grocery totals as a list in an array
+var groceryCost = [125, 100, 142, 112, 178];
+//Add up to arrive at the total amount spent on groceries.
+var total = groceryCost[0] + groceryCost[1] + groceryCost[2] + groceryCost[3]+ groceryCost[4];
+//Calculate the average weekly grocery spending
+var average = total / 5;
+//Print out the result for both the total and average of groceries
+console.log("You have spent a total of $" + total + " on groceries over 5 weeks." + " That is an average of $" + average+ " per week.");
