@@ -23,7 +23,7 @@ console.log(area);
 //Modulo Operator
 var remainder = 32 % 2;
 console.log(remainder);
- */
+
 
 //Order of Operations
 
@@ -42,3 +42,8 @@ var width =6;
 var perimeter = length*2+width*2;
 
 console.log(perimeter);
+ */
+
+var orangeBins = [234, 567, 883];
+var total = orangeBins[0] + orangeBins[1] + orangeBins[2];
+console.log(total);
