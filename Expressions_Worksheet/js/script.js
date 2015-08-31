@@ -33,6 +33,7 @@ console.log("Each person ate " + slices + " slices of pizza at the party.");
 //Number of slices per pizza: 12
 //Number of people at the party: 15
 //Number of pizzas ordered: 5
-
 //Number of slices Sparky gets to eat.
-//Sparky got X slices of pizza.”
+var leftovers = (slicesPizza * wholePizza) % people;
+//Print out how many slices Sparky will eat
+console.log("Sparky got " + leftovers + " slices of pizza.");
