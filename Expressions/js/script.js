@@ -60,7 +60,6 @@ var b = "7";
 var result = a + b;
 
 console.log(result);
-*/
 
 //Casting making strings numbers and vice versa
 
@@ -74,3 +73,14 @@ var secPart= 2381;
 
 var phoneNo = "(" + String(areaCode) + ")" +  String(firstPart) + "-" + String(secPart);
 console.log(phoneNo);
+ */
+
+
+//Assignment Operations
+
+var a = 3;
+// a = a + 4; //= is an assignment operator
+// a += 4; a*= 4; a /=4;  a -= 4; same as above in one line
+//a ++ ; // a= a +1 // a += 1;
+a -- ;
+console.log(a);
