@@ -24,8 +24,8 @@ console.log("Your items are priced at " + items + " individually.");
 var total= Number(items[0]) + Number(items [1]) + Number(items [2]) + Number(items [3])+ Number(items [4]);;
 /* For the test values I entered I was given a total of 40 which is correct*/
 //print to console and alert the user of the total
-console.log("The total of the four items combined is $" + total);
-alert("The total of the four items combined is $" + total);
+console.log("The total of the five items combined is $" + total);
+alert("The total of the five items combined is $" + total);
 //create a variable for the number of items to divide by
 var divide= 5;
 //calculate the average of the items
