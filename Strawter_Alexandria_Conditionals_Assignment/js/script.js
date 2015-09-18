@@ -37,13 +37,14 @@ if (isNaN(num3)){
 //Entered in 34
 
 var add = [Number(num1) + Number(num2)+ Number(num3)];//added the totals of the entered values
-alert("Your three numbers equal " + add);//alerted the user of the total of the entered values
+console.log("Your three numbers equal " + add);
+alert("Your three numbers equal " + add);//printed to console and alerted the user of the total of the entered values
 
 //I used a calculator and got 125 which is also what the function produced
 
 
 var total = add *3;//multiplied the total by 3
-
+console.log("When multiplied by three the total is "+total);
 //125 multiplied by 3 is 375 the function was correct
 
 
@@ -56,13 +57,14 @@ var total = add *3;//multiplied the total by 3
 
 if(add % 2 == 0)
 {
-    alert ('The total '+ add +' is even. \nAfter being multiplied by three the total is ' + total);}
+    alert ('The total '+ add +' is even. \nAfter being multiplied by three the total is ' + total);
+    console.log('The total '+ add +' is even. \nAfter being multiplied by three the total is ' + total);
+}
 else if (!(add % 2==0)) //used the logical operator ! to show that the remainder is not equal to 0
     {
         alert('The total ' + add + ' is odd. \n After being multiplied by three the total is ' + total);
+        console.log('The total ' + add + ' is odd. \n After being multiplied by three the total is ' + total);
     }//alerted user of the total and the what the new total is after multiplied by 3
-
-
 
 
 alert("Now we will find out if your new total is even or odd");
