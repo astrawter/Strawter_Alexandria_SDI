@@ -13,6 +13,9 @@ if(num1 === ""){
 if (isNaN(num1)){
     num1 = prompt("Only enter numbers! Type one in now")
 }
+
+//Entered in 13
+
 var num2 = prompt("Now for the second number.");
 if(num2 === ""){
     num2 = prompt("Please enter a value")
@@ -20,6 +23,9 @@ if(num2 === ""){
 if (isNaN(num2)){
     num2 = prompt("Only enter numbers! Type one in now")
 }
+
+//Entered in 78
+
 var num3 = prompt("Finally your last number.");
 if(num3 === ""){
     num3 = prompt("Please enter a value")
@@ -28,11 +34,26 @@ if (isNaN(num3)){
     num3 = prompt("Only enter numbers! Type one in now")
 }
 
+//Entered in 34
+
 var add = [Number(num1) + Number(num2)+ Number(num3)];//added the totals of the entered values
 alert("Your three numbers equal " + add);//alerted the user of the total of the entered values
 
-//Discover if the addition of the three numbers is even or odd
+//I used a calculator and got 125 which is also what the function produced
+
+
 var total = add *3;//multiplied the total by 3
+
+//125 multiplied by 3 is 375 the function was correct
+
+
+//Discover if the addition of the three numbers is even or odd
+
+
+//125 is odd
+
+
+
 if(add % 2 == 0)
 {
     alert ('The total '+ add +' is even. \nAfter being multiplied by three the total is ' + total);}
@@ -40,9 +61,14 @@ else if (!(add % 2==0)) //used the logical operator ! to show that the remainder
     {
         alert('The total ' + add + ' is odd. \n After being multiplied by three the total is ' + total);
     }//alerted user of the total and the what the new total is after multiplied by 3
+
+
+
+
 alert("Now we will find out if your new total is even or odd");
 
 
 (total % 2 == 0) ? alert("The total "+ total +" is even. Thank you!") : alert("The total "+ total +" is odd. Thank you!"); //Used ternary statement in order to show if the new total is even or odd
 
 
+//375 is also odd the script was a success!
