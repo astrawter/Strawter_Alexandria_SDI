@@ -40,13 +40,9 @@ else if (!(add % 2==0)) //used the logical operator ! to show that the remainder
     {
         alert('The total ' + add + ' is odd. \n After being multiplied by three the total is ' + total);
     }//alerted user of the total and the what the new total is after multiplied by 3
+alert("Now we will find out if your new total is even or odd");
 
 
-//2 Conditional Statements that are NOT part of prompt validation are present in code and work correctly.
+(total % 2 == 0) ? alert("The total "+ total +" is even. Thank you!") : alert("The total "+ total +" is odd. Thank you!"); //Used ternary statement in order to show if the new total is even or odd
 
-
-//At least 1 Ternary Statement is present in code and works correctly.
-
-
-//Test values are present in a comment at the end of code and are correct.
 
