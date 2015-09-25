@@ -4,26 +4,51 @@
    Functions Assignment
  */
 
-/*a. At	least	2	functions	– 1	Normal	and	1	Anonymous
-b. Each	function	must	use	arguments	and	parameters
-c. 1	function	must	contain	3	parameters
-d. A	value	must	be	returned	for	each	function and	saved	in	a	variable	in	the	main
-code.
-    e. You	must	not	use	“main	code”	variable	inside	of	a	function,	you	must	pass	them
-in	as	arguments.
-    f. All	user	prompts	must	be	validated	using	a	while	loop. */
+//Explaining to the user about what is about to take place
+alert("Welcome to my fake game score calulcator! We Will take your starting score which is less than 50. \nWe will add the points gained from three games. \nFinally we will enter the points gained during the double points round.\nLet's get started!")
 //entering starting number
 var start = prompt("What is your starting score?");
 //making sure it is not blank
 while(start ==="" || isNaN(start) || start > 50) {
-
+//making sure the starting number is not blank
     if (start === "") {
         start = prompt("Please enter a number. \nWhat is your starting score?");
-    } else if (isNaN(start)) {
+    } else if (isNaN(start)) { //making sure the starting number is a number
         start = prompt("Please only use numbers. \nWhat is your starting score?");
     }
-    else if (start > 50) {
+    else if (start > 50) { //making sure the starting number is less then 50
         start = prompt("Please enter a number less than 50. \nWhat is your starting score?");
     }
 }
 console.log(start);
+
+
+
+//We will then ask for the points to be deducted. No more than 10 points
+var first= prompt("How many points were added in the first game? \n(No number greater than 10");
+while(first ==="" || isNaN(first) || first > 10) { //validating
+        first = prompt("Please enter a number. \nWhat is your first score?");
+}
+
+var second= prompt("How many points were added in the second game? \n(No number greater than 10");
+while(second ==="" || isNaN(second) || second > 10) { //validating
+    second= prompt("How many points were added in the second game? \n(No number greater than 10");
+}
+
+
+
+var third= prompt("How many points were added in the third game? \n(No number greater than 10");
+while(third ==="" || isNaN(third) || third > 10) { //validating
+        third = prompt("Please enter a number. \nWhat is your third score?");
+}
+
+//define anonymous function first
+var add= function(one , two , three){
+    var score = Number(one) + Number(two) + Number(three);
+    return score;
+}
+
+var a = add(first, second, third);
+var total = a + Number(start);
+
+console.log(total);
