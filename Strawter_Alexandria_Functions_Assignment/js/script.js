@@ -60,12 +60,6 @@ while(multiple ==="" || isNaN(multiple) || multiple > 10) { //validating
 var double = multiple * 2
 
 
-    function calcTotal(){
-        var double = multiple * 2;
-        return double;//sends the answer to calcTotal
-    }
-console.log(calcTotal());
-
 var final =Number(double)+Number(total);
 console.log(final);
 alert("Your score is " + final + " points!");
