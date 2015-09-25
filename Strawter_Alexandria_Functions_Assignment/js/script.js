@@ -57,9 +57,15 @@ while(multiple ==="" || isNaN(multiple) || multiple > 10) { //validating
    multiple= prompt("How many points were added in the second game? \n(No number greater than 10");
 }
 
-var subtotal =calcTotal(total,multiple);
-function calcTotal(total,multiple){
-    var final = total * multiplet;
-    return final;//sends the answer to calcArea()
+var double = multiple * 2
 
-prompt("Your score is " + final + " points!")
+
+    function calcTotal(){
+        var double = multiple * 2;
+        return double;//sends the answer to calcTotal
+    }
+console.log(calcTotal());
+
+var final =Number(double)+Number(total);
+console.log(final);
+alert("Your score is " + final + " points!");
