@@ -52,3 +52,14 @@ var a = add(first, second, third);
 var total = a + Number(start);
 
 console.log(total);
+var multiple = prompt("How many points where earned in the double points round?");
+while(multiple ==="" || isNaN(multiple) || multiple > 10) { //validating
+   multiple= prompt("How many points were added in the second game? \n(No number greater than 10");
+}
+
+var subtotal =calcTotal(total,multiple);
+function calcTotal(total,multiple){
+    var final = total * multiplet;
+    return final;//sends the answer to calcArea()
+
+prompt("Your score is " + final + " points!")
